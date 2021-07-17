@@ -13,10 +13,10 @@ const Product = ({ product, onAddToCart }) => {
             <CardMedia className={classes.media} image={product.media.source} title={product.name} />
             <CardContent>
                 <div className={classes.CardContent}>
-                    <Typography variant="h5" gutterBottom>
+                    <Typography variant="h5" component="h2" gutterBottom style={{ fontWeight: '700' }}>
                         {product.name}
                     </Typography>
-                    <Typography variant="h5" gutterBottom>
+                    <Typography variant="h5" component="h2" gutterBottom>
                         {product.price.formatted_with_symbol}
                     </Typography>
                 </div>
@@ -31,4 +31,4 @@ const Product = ({ product, onAddToCart }) => {
     ) 
 }
 
-export default Product
+export default Product;
